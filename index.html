@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIANZA RAPPRESENTATIVA CALCIO</title>
+
+    <!--FAVICO-->
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+    <!-- BOOTSTRAP -->
+    <!--css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--BOX ICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--INTERNAL FILES-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/squadre/">Squadre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/staff/">Staff</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contatti/">Contatti</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--CAROSELLO IMMAGINI-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" style="background-color: rgb(73, 73, 73);">
+            <div class="carousel-item active">
+                <img class="d-block w-50 image-center" src="temp/wall-temp-1.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>TEXT</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-50 image-center" src="temp/wall-temp-2.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>TEXT</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-50 image-center" src="temp/wall-temp-3.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>TEXT</h5>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!--3 COLONNE INFORMATIVE-->
+    <div class="information">
+        <div style="background-color: rgb(67, 143, 187);">
+            <div class="information-element">
+                <a data-target="#modal-obiettivi" data-toggle="modal"><i class='bx bx-football bx-md icon'></i></a>
+            </div>
+            <div class="information-element">
+                <h3>OBIETTIVI</h3>
+                <h5>sviluppo dei Giovani Talenti</h5>
+            </div>
+        </div>
+
+        <div style="background-color: rgb(128, 128, 128);">
+            <div class="information-element">
+                <a data-target="#modal-struttura" data-toggle="modal"><i class='bx bx-buildings bx-md icon' ></i></a>
+            </div>
+            <div class="information-element">
+                <h3>STRUTTURA</h3>
+                <h5>soluzioni, programmi e supporti</h5>
+            </div>
+        </div>
+
+        <div style="background-color: rgb(156, 156, 156);">
+            <div class="information-element">
+                <a data-target="#modal-benefici" data-toggle="modal"><i class='bx bx-health bx-md icon' ></i></a>
+            </div>
+            <div class="information-element">
+                <h3>BENEFICI</h3>
+                <h5>opportunità di crescita</h5>
+            </div>
+        </div>
+    </div>
+
+    <!--TESTO INFORMATIVO CENTRALE-->
+    <div class="information-text">
+        <div>
+            <p style="color: var(--primary-color-dark);">
+                <b><span>BRIANZA RAPPRESENTATIVA CALCIO</span></b>
+            </p>
+
+            <h2 style="color: var(--primary-color);">
+                LO SPORT PER LA CRESCITA
+            </h2>
+
+            <br>
+
+            <h5>
+                Il progetto "LOMBRADIA SOCCER ACADEMY nasce con l'obiettivo di creare un percorso di <b>crescita</b>
+                sportiva per i bambini di età compresa tra 8 e 11 anni che giocano principalmente nei campionati CSI
+                (Centro Sportivo Italiano)
+            </h5>
+
+            <br>
+
+            <h5>
+                L'intento è quello di selezionare i <b>giovani talenti</b> e fornire loro una
+                <b>formazione avanzata</b>, senza che abbandonino le loro squadre di origine, favorendo così una
+                <b>transizione</b> graduale e positiva verso un contesto FIGC (Federazione Italiana Giuoco Calcio).
+            </h5>
+
+            <br><br>
+
+            <div style="background-color: var(--primary-color); padding: 1% 3% 1% 3%; border-radius: 50px; max-width: fit-content;">
+                <h3 style="color: white;">CONCLUSIONE</h3>
+            </div>
+            
+            <br>
+
+            <h5>
+                L'Academy LOMBARDIA SOCCER rappresenta <b>un'opportunità</b> unica per valorizzare i giovani talenti,
+                mantenendo al contempo il <b>legame</b> con le loro comunità di origine. Con il vostro supporto, possiamo fare
+                la differenza nella vita di molti bambini, promuovendo lo sport come strumento di <b>crescita e coesione
+                sociale.</b>
+            </h5>
+        </div>
+        <div>
+            <img src="img/logo.png" alt="logo" width="100%" height="100%">
+        </div>
+    </div>
+
+    <!--PARTNERSHIP-->
+
+    <br><br><br>
+
+    <!--MODAL-->
+
+    <!--modal obiettivi-->
+    <div class="modal fade" id="modal-obiettivi" tabindex="-1" role="dialog" aria-labelledby="modal-obiettiviLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-obiettiviLabel" style="color: var(--primary-color);"><b>OBIETTIVI DEL PROGETTO</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>
+                            Uno degli obiettivi principali è lo <b>sviluppo</b> dei Giovani Talenti, offrire ai bambini più promettenti delle
+                            squadre CSI <b>un'opportunità</b> di <b>crescita</b> e <b>miglioramento tecnico</b>.
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            Riteniamo fondamentale il mantenimento del <b>legame</b> con le squadre CSI e gli oratori di
+                            appartenenza, permettendo ai bambini di <b>continuare</b> a giocare con i loro <b>amici</b> nelle squadre
+                            dell'oratorio, evitando il rischio di <b>dispersione</b> precoce.
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            La nostra academy crea in questo modo un anno di <b>transizione</b> che prepari i <b>bambini</b> al passaggio
+                            verso i campionati FIGC sotto vari punti di vista: <b>tecnico, pedagogico, motorio</b>.
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <b>Partnership</b> con Club professionistiche <b>importanti</b>, sviluppando collaborazioni con società
+                            calcistiche di <b>alto livello</b> per offrire ulteriori <b>opportunità</b> ai giovani talenti.
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal struttura-->
+    <div class="modal fade" id="modal-struttura" tabindex="-1" role="dialog" aria-labelledby="modal-strutturaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-strutturaLabel" style="color: var(--primary-color);"><b>STRUTTURA DEL PROGETTO</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>
+                            <b>Selezione dei Bambini:</b> Organizzazione di <b>tornei</b> e giornate di <b>scouting</b> per individuare i bambini
+                            più <b>talentuosi</b> delle squadre CSI.
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <b>Programma di Allenamento:</b> Sessioni di allenamento settimanali con allenatori <b>qualificati</b>,
+                            focalizzate sul miglioramento tecnico e tattico. Alcuni allenamenti saranno condotti in lingua <b>inglese</b>
+                            per favorire l'apprendimento della lingua e preparare i ragazzi a contesti internazionali.
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <b>Supporto Psicologico e Educativo:</b> Assistenza per gestire la pressione sportiva e bilanciare gli
+                            <b>impegni</b> scolastici e sportivi. Sarà offerto anche <b>supporto</b> per l'aiuto scolastico, garantendo che i
+                            ragazzi possano eccellere sia nello sport che nello <b>studio</b>.
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <b>Supporto Nutrizionale:</b> Consulenze con un nutrizionista per educare i ragazzi e le loro famiglie su
+                            una corretta alimentazione, fondamentale per il <b>benessere</b> e le performance sportive.
+                        </li>
+                        <hr>
+
+
+                        <li>
+                            <b>Educazione dei Genitori:</b> Programmi educativi per insegnare ai <b>genitori</b> come comportarsi in
+                            tribuna, promuovendo il rispetto nei confronti dei propri figli, degli avversari e degli arbitri.
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <b>Coinvolgimento delle Famiglie:</b> Incontri periodici per informare e coinvolgere le famiglie nel
+                            percorso di crescita dei loro figli.
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal benefici-->
+    <div class="modal fade" id="modal-benefici" tabindex="-1" role="dialog" aria-labelledby="modal-beneficiLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-beneficiLabel" style="color: var(--primary-color);"><b>STRUTTURA DEL PROGETTO</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>
+                            Per i Bambini: opportunità di <b>crescita</b> sportiva senza dover <b>abbandonare</b> le loro squadre di origine,
+                            <b>sviluppo</b> di abilità tecniche e tattiche avanzate, supporto psicologico ed educativo, miglioramento
+                            delle competenze linguistiche grazie agli allenamenti in inglese, consulenze nutrizionali per una
+                            corretta alimentazione.
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            Per le Squadre CSI: <b>mantenimento</b> dei giovani talenti nelle squadre dell'oratorio, miglioramento del
+                            livello tecnico generale.
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            Per i Genitori: consapevolezza su come <b>supportare</b> i propri figli in modo positivo e rispettoso durante
+                            le partite.
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            Per la Comunità: promozione dello sport come mezzo di <b>educazione</b> e <b>socializzazione</b>,
+                            rafforzamento del tessuto sociale locale.
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <hr style="background-color: black;">
+        <div class="container-footer">
+            <div>
+                <b><p>©BRIANZA RAPPRESENTATIVA CALCIO</p></b>
+            </div>
+            <div>
+                <img src="img/logo.png" alt="logo" width="50" height="50">
+            </div>
+            <div class="footer-icons">
+                <a href="#" class="a-blank"><i class='bx bxl-instagram-alt bx-md'></i></a>
+                <a href="#" class="a-blank"><i class='bx bxl-facebook-circle bx-md'></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
