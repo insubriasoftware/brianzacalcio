@@ -1,0 +1,49 @@
+:root {
+    --background-color: #ffffff;
+    --primary-color: #1199d8;
+    --primary-color-dark: #065ea7;
+    --text-color: #000000;
+}
+
+body {
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1% 5% 1% 5%;
+}
+
+/*classes*/
+.container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.a-blank {
+    color: inherit
+}
+
+.a-blank:hover {
+    color: white
+}
+
+.footer-icons {
+    display: inline-flex;
+    margin-left: auto;
+}
