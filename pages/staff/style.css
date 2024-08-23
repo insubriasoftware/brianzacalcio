@@ -53,9 +53,70 @@ main {
     margin-left: auto;
 }
 
+.card {
+    border-radius: 20px;
+    background: rgb(122, 172, 157);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px 0 rgba(34, 68,123,0.2);
+    cursor: pointer;
+}
+
+.card-image {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.card-arrow {
+    text-align: right;
+    transition: 0.3s;
+}
+
+.card-arrow:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card-back {
+    border-radius: 20px;
+    background: rgb(77, 121, 81);
+    transition: 0.5s;
+    color: white;
+}
+
+.card-back:hover {
+    box-shadow: 0 4px 20px 0 rgba(34, 68,123,0.2);
+    cursor: pointer;
+}
+
 /*id*/
 #h1-personale {
     color: rgb(74, 132, 195);;
     font-weight: 800;
     /*font-family: "Darker Grotesque", Arial, "Noto Sans", sans-serif;*/
+}
+
+#main-body {
+    margin: 2rem auto;
+    max-width: calc(100% - 80px);
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 2rem;
+
 }

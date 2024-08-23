@@ -19,11 +19,17 @@
 
     <!--BOX ICONS-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
     <!--INTERNAL FILES-->
     <link rel="stylesheet" href="style.css">
+
+    <!--JS-->
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="init_cont()">
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../../index.html">
@@ -52,6 +58,85 @@
 
     <main>
         <h1 id="h1-personale">PERSONALE</h1>
+
+        <div class="main-body">
+
+            <div id="card-container">
+                <div class="card-base card">
+                    <figure class="card-image">
+                        <img src="img/MauroVigorito.jpeg" alt="img">
+                    </figure>
+                    <div class="card-content">
+                        <h3 class="card-title">Mauro Vignorito</h3>
+                        <p class="card-excerpt">
+                            <b>Anno: </b>1990
+                            <br>
+                            <b>Squadra: </b>Como Calcio
+                            <br>
+                            <b>Ruolo: </b>Portiere
+                        </p>
+
+                        <p class="card-excerpt-back">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        </p>
+
+                        <div class="card-arrow">
+                            <a onclick="reverse_card(0)"><i class='bx bx-md bxs-right-arrow-circle' ></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-base card">
+                    <figure class="card-image">
+                        <img src="img/MauroVigorito.jpeg" alt="img">
+                    </figure>
+                    <div class="card-content">
+                        <h3 class="card-title">Mauro Vignorito</h3>
+                        <p class="card-excerpt">
+                            <b>Anno: </b>1990
+                            <br>
+                            <b>Squadra: </b>Como Calcio
+                            <br>
+                            <b>Ruolo: </b>Portiere
+                        </p>
+
+                        <p class="card-excerpt-back">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        </p>
+
+                        <div class="card-arrow">
+                            <a onclick="reverse_card(1)"><i class='bx bx-md bxs-right-arrow-circle' ></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-base card">
+                    <figure class="card-image">
+                        <img src="img/MauroVigorito.jpeg" alt="img">
+                    </figure>
+                    <div class="card-content">
+                        <h3 class="card-title">Mauro Vignorito</h3>
+                        <p class="card-excerpt">
+                            <b>Anno: </b>1990
+                            <br>
+                            <b>Squadra: </b>Como Calcio
+                            <br>
+                            <b>Ruolo: </b>Portiere
+                        </p>
+
+                        <p class="card-excerpt-back">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        </p>
+
+                        <div class="card-arrow">
+                            <a onclick="reverse_card(2)"><i class='bx bx-md bxs-right-arrow-circle' ></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
     </main>
 
     <!--FOOTER-->
