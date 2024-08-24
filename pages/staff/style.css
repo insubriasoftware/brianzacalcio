@@ -11,6 +11,8 @@ body {
     display: flex;
     flex-direction: column;
 
+    background-image: url('../../img/wallpaper_2.jpg');
+
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -55,7 +57,7 @@ main {
 
 .card {
     border-radius: 20px;
-    background: rgb(122, 172, 157);
+    background: rgb(255, 255, 255);
     transition: 0.3s;
 }
 
@@ -68,6 +70,14 @@ main {
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-excerpt {
+    text-align: center;
 }
 
 .card-image img {
